@@ -14,11 +14,11 @@
     <Head>
 
       <Title> Search {{ $formatProjectType(projectType.display) }}s - Modrinth</Title>
-      <Meta name="og:title" :content="`Search ${$formatProjectType(projectType.display)}s`" />
+      <Meta name="og:title" :content="`Search ${$formatProjectType(projectType.display)}s ${searchTermBonus}`" />
       <Meta name="description" :content="metaDescription" />
       <Meta
         name="apple-mobile-web-app-title"
-        :content="`Search ${$formatProjectType(projectType.display)}s ${searchTermBonus}`"
+        :content="`Search ${$formatProjectType(projectType.display)}s`"
       />
       <Meta name="og:description" :content="metaDescription" />
     </Head>
