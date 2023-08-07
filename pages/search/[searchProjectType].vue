@@ -1,8 +1,3 @@
-<script>
-  const searchTerm = new URLSearchParams(window.location.search).get('q') || '';
-  const searchTermBonus = '| ' + searchTerm;
-</script>
-
 <template>
   <div
     :class="{
@@ -14,7 +9,7 @@
     <Head>
 
       <Title> Search {{ $formatProjectType(projectType.display) }}s - Modrinth</Title>
-      <Meta name="og:title" :content="`Search ${$formatProjectType(projectType.display)}s ${searchTermBonus}`" />
+      <Meta name="og:title" :content="`Search ${$formatProjectType(projectType.display)}s ${query}`" />
       <Meta name="description" :content="metaDescription" />
       <Meta
         name="apple-mobile-web-app-title"
