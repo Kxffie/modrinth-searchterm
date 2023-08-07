@@ -9,7 +9,6 @@
     <Head>
 
       <Title> Search {{ $formatProjectType(projectType.display) }}s - Modrinth</Title>
-      <!-- javascript to see if there is a query, add "| " infront of the query text -->
       <Meta name="og:title" :content="`Search ${$formatProjectType(projectType.display)}s ${(query) ? '| ' + query : ''}`" />
       <Meta name="description" :content="metaDescription" />
       <Meta
